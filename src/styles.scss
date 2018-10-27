@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  color: #e2e2e2;
+  background: #36393d url(assets/images/bg-body.jpg);
+  .container{
+    .energy {
+      height: 20px;
+      width: 100%;
+      background: #000 url(assets/images/strip-e.png) top center repeat-x;
+    }
+  }
+}
