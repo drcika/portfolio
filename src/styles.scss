@@ -1,12 +1,57 @@
-body {
-  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
-  color: #e2e2e2;
-  background: #36393d url(assets/images/bg-body.jpg);
-  .container{
-    .energy {
-      height: 20px;
-      width: 100%;
-      background: #000 url(assets/images/strip-e.png) top center repeat-x;
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+html {
+  height: 100%;
+  body {
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    color: #e2e2e2;
+    background: #36393d url(assets/images/bg-body.jpg);
+    height: 100%;
+    overflow:hidden;
+    h1,
+    h3 {
+      font-family: 'Yanone Kaffeesatz';
+      color: #74b913;
+      text-shadow: 3px 3px 3px #000;
+    }
+    .wrapper{
+      height: 100%;
+      .loader-line {
+        width: 100%; // animate
+        height: 4px;
+        background: #74b913;
+      }
+    .top {
+      height: 50%;
+      background: url(assets/images/bg-top.png) repeat-x bottom;
+      position: relative;
+      .container {
+        height: 100%;
+        position: relative;
+        h1 {
+          font-size: 4rem;
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+        }
+      }
+    }
+    .bottom {
+      height: 50%;
+      background: url(assets/images/bg-bottom.png) repeat-x top;
+      .container {
+        h3 {
+          font-size: 1.8rem;
+          padding-top: 1.8%;
+          margin-left: 10%;
+          font-weight: 400;
+        }
+      }
     }
   }
+
+  }
 }
+
+// .container{
+//   border: 1px solid red;
+// }

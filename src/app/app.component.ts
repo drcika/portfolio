@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
-import * as anime from 'animejs';
+import { Component, OnInit } from '@angular/core';
+import { AnimationsService } from './animations.service';
+import { enteringAnimationsTrigger } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [enteringAnimationsTrigger]
 })
-export class AppComponent {
-  title = 'portfolio';
+export class AppComponent implements OnInit{
+
+  constructor(private anime: AnimationsService) {}
+  
+  ngOnInit(): void {
+    this.anime.enterinAnimations();    
+  }
 }
