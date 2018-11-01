@@ -1,0 +1,32 @@
+<div class="container">
+  <mat-tab-group mat-stretch-tabs dynamicHeight *ngIf="data">
+
+    <mat-tab label="Summary">
+        <img class="col-3" src="{{data.img}}" alt="Aleksandar Popovic web developer">
+      <div class="col-7 mt-5">
+        <h3 class="text-center">Summary</h3>
+        <p>
+          - A personable, communicative developer, <br> - takes responsibility for he own personal development,<br> - with a passion for development,<br> - continually evaluating and upgrading skills so that stays at the cutting edge of web development.<br>
+        </p>
+        <h3 class="text-center">Education</h3>
+        <p><strong>Web Development</strong> - University of Belgrade,Institute of nuclear Sciences "Vinča", School of computers "Vinča" 2009</p>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Skills">
+      <h3 class="text-center">Skills</h3>
+      <ul>
+        <li *ngFor="let skill of data.skills"> {{skill}}</li>
+      </ul>
+    </mat-tab>
+    <mat-tab label="Portfolio">
+      <div *ngFor="let project of data.portfolio">
+        <p><a href="{{project.url}}">{{project.name}}</a></p>
+        <img src="{{project.img}}" alt="" style="height: 100px">
+        <p>{{project.info}}</p>
+
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+</div>

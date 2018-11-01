@@ -1,11 +1,13 @@
-<div class="wrapper" @enteringAnimations>
+<div class="wrapper" @enteringAnimations (@enteringAnimations.done)="enteringAnimationsEnd()">
   <div class="top">
     <div class="container">
       <h1>Aleksandar Popović</h1>
     </div>
   </div>
   <div class="loader-line"></div>
-  <div id="content"></div>
+  <div class="middle">
+    <router-outlet></router-outlet>
+  </div>
   <div class="bottom">
     <div class="container">
       <h3>Javascript / Angular / Web developer</h3>

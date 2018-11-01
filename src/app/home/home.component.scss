@@ -1,0 +1,25 @@
+.container {
+  background: rgba(127, 255, 0, 0.01);
+  border: 1px solid rgba(127, 255, 0, 0.2);
+  box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
+  height: 85%;
+  overflow: hidden;
+  img {
+    margin: 8% 0 0 5%;
+    float: left;
+  }
+  div {
+    float: left;
+    margin-left: 5%;
+    padding-top: 3%;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  // li {
+  //   display: inline-block;
+  //   width: 50%;
+  //   font-size: 1.5rem;
+  //   font-weight: 600;
+  // }
+}

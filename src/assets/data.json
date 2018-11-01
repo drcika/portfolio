@@ -1,0 +1,39 @@
+{
+  "name": "Aleksandar Popović",
+  "img": "./assets/portfolio/img-me.png",
+  "contact": ["aleksandar.p@sbb.rs", "https://www.linkedin.com/in/aleksandar--popovic", "https://github.com/drcika"],
+  "summary": "A personable, communicative developer takes responsibility for he own personal development, with a passion for development, continually evaluating and upgrading skills so that stays at the cutting edge of web development. A 2009 Computer Science graduate in web development University of Belgrade, Institute of Nuclear Sciences \"Vinča\" School of computers.",
+  "skills": ["Html/CSS (Sass, Bootstrap)", "Angular 2+", "JavaScript (TypeScript)"," Angular Js", "NodeJs (ekspres, ...)","Adobe Photoshop"],
+  "education": { "name": "Web Development", "school": "University of Belgrade,Institute of nuclear Sciences \"Vinča\", School of computers \"Vinča\" 2009" },
+  "portfolio": [{
+    "name": "zazi",
+    "url": "https://zazi-rs.firebaseapp.com/",
+    "img": "./assets/portfolio/zazi.png",
+    "info": "Fashion designer ZAZI"
+  }, {
+    "name": "Angular animated gallery",
+    "url": "https://ng-anime-gallery.firebaseapp.com/",
+    "img": "./assets/portfolio/gallery.png",
+    "info": "Animations playground"
+  }, {
+    "name": "Phone Book App",
+    "url": "https://phone-book-app-cika.firebaseapp.com/",
+    "img": "./assets/portfolio/phoneBook.png",
+    "info": "Simple Phone Book App"
+  }, {
+    "name": "SPA Cars",
+    "url": "https://spa-cars.firebaseapp.com/",
+    "img": "./assets/portfolio/spaCars.png",
+    "info": "Animations playground"
+  }, {
+    "name": "Fitnes Tracker",
+    "url": "https://ngapc-fitnes-tracker.firebaseapp.com/training",
+    "img": "./assets/portfolio/fitnes.png",
+    "info": "Fitnes Tracker App"
+  }, {
+    "name": "Chat App",
+    "url": "https://intense-journey-38662.herokuapp.com/",
+    "img": "./assets/portfolio/chat.png",
+    "info": "Simple Chat App"
+  }]
+}

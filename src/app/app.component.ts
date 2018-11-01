@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimationsService } from './animations.service';
 import { enteringAnimationsTrigger } from './animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,18 @@ import { enteringAnimationsTrigger } from './animations';
   styleUrls: ['./app.component.scss'],
   animations: [enteringAnimationsTrigger]
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
-  constructor(private anime: AnimationsService) {}
-  
+  constructor(public router: Router) { }
+
   ngOnInit(): void {
-    this.anime.enterinAnimations();    
+    history.pushState(null, null, '/');
+    window.addEventListener('popstate', function (event) {
+      history.pushState(null, null, '/');
+    });
+  }
+
+  enteringAnimationsEnd() {
+    this.router.navigate(['/home']);
   }
 }
