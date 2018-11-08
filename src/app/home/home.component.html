@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container" @pageAnimations>
   <mat-tab-group mat-stretch-tabs dynamicHeight *ngIf="data">
 
     <mat-tab label="Summary">
-        <img class="col-3" src="{{data.img}}" alt="Aleksandar Popovic web developer">
-      <div class="col-7 mt-5">
+      <img class="col-3 rounded-circle" src="{{data.img}}" alt="Aleksandar Popovic web developer">
+      <div class="summary col-7 mt-5">
         <h3 class="text-center">Summary</h3>
         <p>
           - A personable, communicative developer, <br> - takes responsibility for he own personal development,<br> - with a passion for development,<br> - continually evaluating and upgrading skills so that stays at the cutting edge of web development.<br>
@@ -14,17 +14,21 @@
     </mat-tab>
 
     <mat-tab label="Skills">
-      <h3 class="text-center">Skills</h3>
-      <ul>
-        <li *ngFor="let skill of data.skills"> {{skill}}</li>
+      <h3 class="text-center mt-4">My Skills</h3>
+      <ul class="skills pt-3">
+        <li *ngFor="let skill of data.skills">
+          <span class="progressbar pl-5">{{skill}} <span class="progres-text float-right">constantly upgrading</span></span>
+        </li>
       </ul>
     </mat-tab>
     <mat-tab label="Portfolio">
-      <div *ngFor="let project of data.portfolio">
-        <p><a href="{{project.url}}">{{project.name}}</a></p>
-        <img src="{{project.img}}" alt="" style="height: 100px">
-        <p>{{project.info}}</p>
-
+      <h3 class="text-center mt-4">My Projects</h3>
+      <div class="row">
+        <div class="project" *ngFor="let project of data.portfolio">
+          <img src="{{project.img}}" alt="">
+          <h4>{{project.name}}</h4>
+          <!-- <p>{{project.info}}</p> -->
+        </div>
       </div>
     </mat-tab>
 

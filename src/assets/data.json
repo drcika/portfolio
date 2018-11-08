@@ -1,17 +1,17 @@
 {
   "name": "Aleksandar Popović",
-  "img": "./assets/portfolio/img-me.png",
+  "img": "./assets/portfolio/me.png",
   "contact": ["aleksandar.p@sbb.rs", "https://www.linkedin.com/in/aleksandar--popovic", "https://github.com/drcika"],
   "summary": "A personable, communicative developer takes responsibility for he own personal development, with a passion for development, continually evaluating and upgrading skills so that stays at the cutting edge of web development. A 2009 Computer Science graduate in web development University of Belgrade, Institute of Nuclear Sciences \"Vinča\" School of computers.",
   "skills": ["Html/CSS (Sass, Bootstrap)", "Angular 2+", "JavaScript (TypeScript)"," Angular Js", "NodeJs (ekspres, ...)","Adobe Photoshop"],
   "education": { "name": "Web Development", "school": "University of Belgrade,Institute of nuclear Sciences \"Vinča\", School of computers \"Vinča\" 2009" },
   "portfolio": [{
-    "name": "zazi",
+    "name": "Zazi",
     "url": "https://zazi-rs.firebaseapp.com/",
     "img": "./assets/portfolio/zazi.png",
     "info": "Fashion designer ZAZI"
   }, {
-    "name": "Angular animated gallery",
+    "name": "Animated gallery",
     "url": "https://ng-anime-gallery.firebaseapp.com/",
     "img": "./assets/portfolio/gallery.png",
     "info": "Animations playground"

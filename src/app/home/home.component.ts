@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { dataModel } from './data.model';
+import { pageAnimationsTrigger } from '../animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [ pageAnimationsTrigger]
 })
 export class HomeComponent implements OnInit {
 
