@@ -3,12 +3,19 @@
 html {
   height: 100%;
   body {
-    color: #e2e2e2;
+    color: #ffffff;
     background: #36393d url(assets/images/bg-body.jpg);
     height: 100%;
     overflow: hidden !important;
+    a {
+      color: #aee264;
+      &:hover {
+        color: #79c113;
+      }
+    }
     h1,
-    h3, h4 {
+    h3,
+    h4 {
       font-family: 'Yanone Kaffeesatz';
       color: #74b913;
       text-shadow: 3px 3px 3px #000;
@@ -42,12 +49,6 @@ html {
             li {
               font-size: 1.3rem;
               margin-left: 10%;
-              a {
-                color: #aee264;
-                &:hover {
-                  color: #79c113;
-                }
-              }
             }
           }
         }
@@ -66,7 +67,7 @@ html {
             margin-left: 10%;
             display: inline-block;
           }
-          small{
+          small {
             color: #bce485;
           }
         }

@@ -1,5 +1,5 @@
 <div class="container" @pageAnimations>
-  <mat-tab-group mat-stretch-tabs dynamicHeight *ngIf="data">
+  <mat-tab-group mat-stretch-tabs dynamicHeight *ngIf="data" (selectedTabChange)="tabChanged($event)">
 
     <mat-tab label="Summary">
       <img class="col-3 rounded-circle" src="{{data.img}}" alt="Aleksandar Popovic web developer">
@@ -15,21 +15,33 @@
 
     <mat-tab label="Skills">
       <h3 class="text-center mt-4">My Skills</h3>
-      <ul class="skills pt-3">
+      <ul class="col-7 skills mt-3 mx-auto">
         <li *ngFor="let skill of data.skills">
-          <span class="progressbar pl-5">{{skill}} <span class="progres-text float-right">constantly upgrading</span></span>
-        </li>
+          <em>{{skill}}</em>
+          <div class="bar col-5"><span class="expand"></span><span class="expand2"></span></div>
+          <small class="progres-text float-right">constantly upgrading</small></li>
       </ul>
     </mat-tab>
+
     <mat-tab label="Portfolio">
       <h3 class="text-center mt-4">My Projects</h3>
       <div class="row">
         <div class="project" *ngFor="let project of data.portfolio">
           <img src="{{project.img}}" alt="">
-          <h4>{{project.name}}</h4>
-          <!-- <p>{{project.info}}</p> -->
+          <h4 class="project-name">{{project.name}}</h4>
+          <div class="project-hover">
+            <div class="project-description">
+              <h4 class="text-center">{{project.info}}</h4>
+            </div>
+            <div class="project-link"><a href="{{project.url}}" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+            <div class="project-gihub"><a href="{{project.github}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+          </div>
         </div>
       </div>
+    </mat-tab>
+
+    <mat-tab label="Contact">
+         
     </mat-tab>
 
   </mat-tab-group>

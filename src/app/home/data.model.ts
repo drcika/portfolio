@@ -7,6 +7,7 @@ export class dataModel {
   skills?: [];
   school?: string;
   url?: string;
+  github?: string;
   info?: string;
 
   education?: dataModel;

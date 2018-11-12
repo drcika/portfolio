@@ -3,36 +3,42 @@
   "img": "./assets/portfolio/me.png",
   "contact": ["aleksandar.p@sbb.rs", "https://www.linkedin.com/in/aleksandar--popovic", "https://github.com/drcika"],
   "summary": "A personable, communicative developer takes responsibility for he own personal development, with a passion for development, continually evaluating and upgrading skills so that stays at the cutting edge of web development. A 2009 Computer Science graduate in web development University of Belgrade, Institute of Nuclear Sciences \"Vinča\" School of computers.",
-  "skills": ["Html/CSS (Sass, Bootstrap)", "Angular 2+", "JavaScript (TypeScript)"," Angular Js", "NodeJs (ekspres, ...)","Adobe Photoshop"],
+  "skills": ["Html/CSS (Sass, Bootstrap)", "Angular", "JavaScript (TypeScript)", " Angular Js", "NodeJs (ekspres, ...)", "Adobe Photoshop"],
   "education": { "name": "Web Development", "school": "University of Belgrade,Institute of nuclear Sciences \"Vinča\", School of computers \"Vinča\" 2009" },
   "portfolio": [{
     "name": "Zazi",
     "url": "https://zazi-rs.firebaseapp.com/",
+    "github": "https://github.com/drcika/zazi-rs/tree/master/src/app",
     "img": "./assets/portfolio/zazi.png",
     "info": "Fashion designer ZAZI"
   }, {
     "name": "Animated gallery",
     "url": "https://ng-anime-gallery.firebaseapp.com/",
+    "github": "https://github.com/drcika/anime-gallery/tree/master/src/app",
     "img": "./assets/portfolio/gallery.png",
     "info": "Animations playground"
   }, {
     "name": "Phone Book App",
     "url": "https://phone-book-app-cika.firebaseapp.com/",
+    "github": "https://github.com/drcika/phone-book-app/tree/master/src/app",
     "img": "./assets/portfolio/phoneBook.png",
     "info": "Simple Phone Book App"
   }, {
     "name": "SPA Cars",
     "url": "https://spa-cars.firebaseapp.com/",
+    "github": "https://github.com/drcika/spa-cars/tree/master/src/app",
     "img": "./assets/portfolio/spaCars.png",
     "info": "Animations playground"
   }, {
     "name": "Fitnes Tracker",
     "url": "https://ngapc-fitnes-tracker.firebaseapp.com/training",
+    "github": "https://github.com/drcika/fitnes-tracker--AngularMaterial-Angularfire-NgRx-/tree/master/app",
     "img": "./assets/portfolio/fitnes.png",
     "info": "Fitnes Tracker App"
   }, {
     "name": "Chat App",
     "url": "https://intense-journey-38662.herokuapp.com/",
+    "github": "https://github.com/drcika/Simple-Chat-App",
     "img": "./assets/portfolio/chat.png",
     "info": "Simple Chat App"
   }]
