@@ -1,0 +1,7 @@
+<h3 class="text-center mt-4">My Skills</h3>
+<ul class="col-7 skills mt-3 mx-auto" *ngIf="data">
+  <li *ngFor="let skill of data.skills">
+    <em>{{skill}}</em>
+    <div class="bar col-5"><span class="expand"></span><span class="expand-anime"></span></div>
+    <small class="progres-text float-right">constantly upgrading</small></li>
+</ul>

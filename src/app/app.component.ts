@@ -20,6 +20,6 @@ export class AppComponent implements OnInit {
   }
 
   enteringAnimationsEnd() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/developer']);
   }
 }

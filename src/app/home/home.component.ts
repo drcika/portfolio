@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { dataModel } from './data.model';
 import { pageAnimationsTrigger } from '../animations';
-import * as anime from 'animejs';
+import { SharedService } from './shared.service';
+import { AnimationsService } from '../animations.service';
+import { dataModel } from './data.model';
 
 @Component({
   selector: 'app-home',
@@ -12,31 +12,19 @@ import * as anime from 'animejs';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
-
+  constructor(private sharedService: SharedService, private animationsService: AnimationsService) { }
+  
   private data: dataModel;
-  private animation;
 
   ngOnInit() {
-    this.http.get('/assets/data.json')
+    this.sharedService.getData()
       .subscribe((data: dataModel): void => {
         this.data = data;
       });
   }
   tabChanged(event) {
     if (event.tab.textLabel === 'Skills') {
-      let progress = Array.from(document.querySelectorAll('.expand2'));
-
-      for (let bar of progress) {
-        let random = Math.floor((Math.random() * 10) + 1);
-        this.animation = [{ width: `${10 + random}%`, offset: 0 }, { width: 0, offset: 1 }];
-        bar.animate(this.animation, {
-          duration: 800 * random,
-          iterations: Infinity,
-          easing: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
-          delay: 100 * random
-        })
-      }
+      this.animationsService.animeSkills();
     }
   }
 }

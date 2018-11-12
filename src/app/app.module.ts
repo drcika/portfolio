@@ -7,11 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MatTabsModule } from '@angular/material';
+import { SkillsComponent } from './home/skills/skills.component';
+import { PortfolioComponent } from './home/portfolio/portfolio.component';
+import { ContactComponent } from './home/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

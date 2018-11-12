@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import * as anime from 'animejs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,37 +7,19 @@ export class AnimationsService {
 
   constructor() { }
 
-  enterinAnimations() {
-    // let init = anime({
-    //   targets: '.top',
-    //   opacity: 0,
-    //   duration: 100,
-    //   delay: 2700,
-    //   easing: 'easeOutBack'
-    // });
+  animeSkills() {
+    let progress = Array.from(document.querySelectorAll('.expand-anime'));
 
-    // let loader = anime({
-    //   targets: '.loader-line',
-    //   opacity: 0,
-    //   duration: 100,
-    //   delay: 2700,
-    //   easing: 'easeOutBack'
-    // });
-    // let bottom = anime({
-    //   targets: '.bottom',
-    //   translateY: '85%',
-    //   duration: 800,
-    //   delay: 3000,
-    //   easing: 'easeOutBack',
-    //   // complete: ()=> this.router.navigate(['/home'])
-    // });
-    // let top = anime({
-    //   targets: '.top',
-    //   translateY: '-75%',
-    //   duration: 1000,
-    //   delay: 2800,
-    //   easing: 'easeOutBack'
-    // });
+    for (let bar of progress) {
+      let random = Math.floor((Math.random() * 10) + 1);
+      let animation: any = [{ width: `${10 + random}%`, offset: 0 }, { width: 0, offset: 1 }];
+      bar.animate( animation, {
+        duration: 800 * random,
+        iterations: Infinity,
+        easing: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+        delay: 100 * random
+      })
+    }
   }
 
 }
