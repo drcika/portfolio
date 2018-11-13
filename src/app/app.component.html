@@ -1,5 +1,5 @@
 <div class="wrapper" @enteringAnimations (@enteringAnimations.done)="enteringAnimationsEnd()">
-  <div class="top">
+  <header>
     <div class="container">
       <h1>Aleksandar Popović</h1>
       <ul class="col-2">
@@ -8,15 +8,15 @@
         <li><a href="https://twitter.com/drcikaa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
       </ul>
     </div>
-  </div>
+  </header>
   <div class="loader-line"></div>
-  <div class="middle">
+  <main>
     <router-outlet></router-outlet>
-  </div>
-  <div class="bottom">
+  </main>
+  <footer>
     <div class="container">
         <h3>Javascript / Angular / Web developer</h3>
-        <small class="float-right mt-4 pt-3">© 2018 Copyright: Aleksandar Popovic</small>
+        <small class="float-right">© 2018 Copyright: Aleksandar Popovic</small>
     </div>
-  </div>
+  </footer>
 </div>

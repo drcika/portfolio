@@ -3,14 +3,14 @@ import { trigger, group, animate, style, transition, query, stagger } from "@ang
 export const enteringAnimationsTrigger = trigger('enteringAnimations', [
   transition(':enter', [
     group([
-      query('.top', [
+      query('header', [
         style({ height: '50%' }),
-        animate('1000ms 2800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ height: '17%' }))
+        animate('1000ms 2800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ height: '15%' }))
       ]),
 
-      query('.middle', [
+      query('main', [
         style({ height: 0, paddingTop: 0 }),
-        animate('1000ms 2800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ height: '76%' }))
+        animate('1000ms 2800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ height: '78%' }))
       ]),
 
       query('.container', [
@@ -27,7 +27,7 @@ export const enteringAnimationsTrigger = trigger('enteringAnimations', [
       query('ul li', [
         style({ opacity: 0 }),
         stagger(-500, [
-          animate('500ms 3900ms ease-in-out', style({ opacity: 1 })),
+          animate('400ms 3500ms ease-in-out', style({ opacity: 1 })),
         ]),
       ]),
 

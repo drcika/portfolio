@@ -2,8 +2,8 @@
   <mat-tab-group mat-stretch-tabs dynamicHeight *ngIf="data" (selectedTabChange)="tabChanged($event)">
 
     <mat-tab label="Summary">
-      <img class="col-3 rounded-circle" src="{{data.img}}" alt="Aleksandar Popovic web developer">
-      <div class="summary col-7 mt-5">
+      <img class="rounded-circle" src="{{data.img}}" alt="Aleksandar Popovic web developer">
+      <div class="summary">
         <h3 class="text-center">Summary</h3>
         <p>
           - A personable, communicative developer, <br> - takes responsibility for he own personal development,<br> - with a passion for development,<br> - continually evaluating and upgrading skills so that stays at the cutting edge of web development.<br>
@@ -15,11 +15,12 @@
 
     <mat-tab label="Skills">
       <h3 class="text-center mt-4">My Skills</h3>
-      <ul class="col-7 skills mt-3 mx-auto" *ngIf="data">
-        <li *ngFor="let skill of data.skills">
-          <em>{{skill}}</em>
-          <div class="bar col-5"><span class="expand"></span><span class="expand-anime"></span></div>
-          <small class="progres-text float-right">constantly upgrading</small></li>
+      <ul class="col-sm-12 col-md-7 skills mt-md-3 mx-auto" *ngIf="data">
+        <li class="mt-4 mt-md-5" *ngFor="let skill of data.skills">
+          <em class="col-sm-6 col-md-5 text-center">{{skill}}</em>
+          <div class="bar"><span class="expand"></span><span class="expand-anime"></span></div>
+          <small class="progres-text">constantly upgrading</small>
+        </li>
       </ul>
     </mat-tab>
 
@@ -28,7 +29,7 @@
     </mat-tab>
 
     <mat-tab label="Contact">
-
+      <app-contact></app-contact>
     </mat-tab>
 
   </mat-tab-group>

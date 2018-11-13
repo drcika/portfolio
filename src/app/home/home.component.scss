@@ -1,31 +1,29 @@
 .container {
   background: rgba(127, 255, 0, 0.03);
-  border-radius: 1.5rem;
+  border-radius: 20px;
   border: 1px solid rgba(127, 255, 0, 0.2);
   box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
   height: 95%;
   overflow: hidden;
   img {
-    margin: 10% 0 0 5%;
+    width: 35vmin;
     float: left;
+    margin: 10% 5%;
   }
   div.summary {
-    float: left;
-    margin-left: 5%;
     padding-top: 3%;
   }
   ul.skills {
     li {
-      margin-top: 4%;
       em {
         display: inline-block;
-        width: 37%;
         text-shadow: 1px 1px 1px #000;
       }
       div.bar {
         position: relative;
         display: inline-block;
         background: #000;
+        width: 40%;
         height: 10px;
         border-radius: 3px;
         border-left: 1px solid #111;
@@ -54,14 +52,17 @@
       }
       .progres-text {
         font-size: 0.7rem;
+        float: right;
         animation: blinkingText 2s ease-in-out infinite;
       }
     }
   }
 }
 
-::ng-deep .mat-tab-header-pagination {
-  display: none !important;
+@media (min-width: 768px) {
+  ::ng-deep .mat-tab-header-pagination {
+    display: none !important;
+  }
 }
 
 @keyframes blinkingText {
