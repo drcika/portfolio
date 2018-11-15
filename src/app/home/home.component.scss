@@ -1,26 +1,6 @@
 .container {
-  background: rgba(127, 255, 0, 0.03);
-  border-radius: 20px;
-  border: 1px solid rgba(127, 255, 0, 0.2);
-  box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
   height: 95%;
-  overflow: hidden;
-  position: relative;
-
-  &:after {
-    content: '';
-    height: 2em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .hide-scroll {
-    overflow: auto;
-    max-height: 100%;
-    margin-right: -100px;
-    padding-right: 100px;
-  }
+  overflow: auto;
   img {
     width: 35vmin;
     float: left;
@@ -76,6 +56,9 @@
 }
 
 @media (min-width: 768px) {
+  .container {
+    overflow: hidden;
+  }
    ::ng-deep .mat-tab-header-pagination {
     display: none !important;
   }

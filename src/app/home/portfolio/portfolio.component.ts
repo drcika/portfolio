@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { dataModel } from '../data.model';
 import { SharedService } from '../shared.service';
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
