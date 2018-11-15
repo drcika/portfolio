@@ -5,10 +5,26 @@
   box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
   height: 95%;
   overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .hide-scroll {
+    overflow: auto;
+    max-height: 100%;
+    margin-right: -100px;
+    padding-right: 100px;
+  }
   img {
     width: 35vmin;
     float: left;
-    margin: 10% 5%;
+    margin: 10% 5% 0 5%;
   }
   div.summary {
     padding-top: 3%;
@@ -60,7 +76,7 @@
 }
 
 @media (min-width: 768px) {
-  ::ng-deep .mat-tab-header-pagination {
+   ::ng-deep .mat-tab-header-pagination {
     display: none !important;
   }
 }

@@ -1,0 +1,35 @@
+div.contact-wrapper {
+  margin: 5% auto;
+  div.row {
+    border: 1px solid rgba(127, 255, 0, 0.2);
+    box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
+    div.contact-information {
+      background: rgba(0, 0, 0, 0.5);
+      a {
+        color: white;
+      }
+    }
+    div.contact-form {
+      background: rgba(0, 0, 0, 0.2);
+      form {
+        padding: 15px;
+        font-size: 1.3rem;
+        .md-form {
+          .prefix {
+            text-align: center;
+            padding-right: 15px;
+            &.active {
+              color: white;
+            }
+          }
+          .inputVal {
+            padding-top: 10px;
+          }
+          label.active{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
