@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
 
   constructor(private sharedService: SharedService, private animationsService: AnimationsService) { }
   
-  private data: dataModel;
-  private anime = false;
+   data: dataModel;
+   anime = false;
 
   ngOnInit() {
     this.sharedService.getData()
@@ -27,11 +27,12 @@ export class HomeComponent implements OnInit {
 
     if (event.tab.textLabel === 'Skills') {
       this.anime = true;
-      this.animationsService.animeSkills();
+      // this.animationsService.animeSkills();
+      this.animationsService.anime(event.tab.textLabel);
     }
 
     if (event.tab.textLabel === 'Portfolio') {
-      this.animationsService.animePortfolio();
+      this.animationsService.anime(event.tab.textLabel);
     }
   }
 

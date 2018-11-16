@@ -10,7 +10,7 @@ import { SharedService } from '../shared.service';
 export class PortfolioComponent implements OnInit {
 
   constructor(private sharedService: SharedService) { }
-  private data: dataModel;
+   data: dataModel;
 
   ngOnInit() {
     this.sharedService.getData()

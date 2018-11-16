@@ -78,7 +78,7 @@ export const skillsTrigger = trigger('skillsAnimations', [
     query('li', [
         style({ opacity: 0, transform: 'translateX(-5%)' }),
         stagger(300, [
-          animate('500ms 200ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' })),
+          animate('500ms 1800ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' })),
         ]),
       ]),
 

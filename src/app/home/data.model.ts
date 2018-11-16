@@ -4,12 +4,15 @@ export class dataModel {
   img?: string;
   contact?: string;
   summary?: string;
-  skills?: [];
+  logo?: string;
   school?: string;
   url?: string;
   github?: string;
   info?: string;
-
+  category?: string;
+  
+  mainSkills?: dataModel[];
+  restSkills?: dataModel[];
   education?: dataModel;
   portfolio?: dataModel[];
 

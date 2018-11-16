@@ -3,7 +3,77 @@
   "img": "./assets/portfolio/me.png",
   "contact": ["aleksandar.p@sbb.rs", "https://www.linkedin.com/in/aleksandar--popovic", "https://github.com/drcika"],
   "summary": "A personable, communicative developer takes responsibility for he own personal development, with a passion for development, continually evaluating and upgrading skills so that stays at the cutting edge of web development. A 2009 Computer Science graduate in web development University of Belgrade, Institute of Nuclear Sciences \"Vinča\" School of computers.",
-  "skills": ["Html/CSS (Sass, Bootstrap)", "Angular", "JavaScript (TypeScript)", " Angular Js", "NodeJs (ekspres, ...)", "Adobe Photoshop"],
+  "mainSkills": [{
+      "name": "JavaScript",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+    },
+    {
+      "name": "Angular 2+",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png"
+    },
+    {
+      "name": "Html",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png"
+    },
+    {
+      "name": "Css",
+      "logo": "https://ih1.redbubble.net/image.476098191.6587/sticker,375x360-bg,ffffff.png"
+    },
+    {
+      "name": "NodeJs",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png"
+    },
+    {
+      "name": "Sass/Scss",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/220px-Sass_Logo_Color.svg.png"
+    },
+    {
+      "name": "TypeScript",
+      "logo": "https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png"
+    },
+    {
+      "name": "Photoshop",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/66px-Adobe_Photoshop_CC_icon.svg.png"
+
+    }
+  ],
+  "restSkills": [{
+      "name": "AJAX",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/1200px-AJAX_logo_by_gengns.svg.png"
+    },
+    {
+      "name": "Express.js",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/200px-Expressjs.png"
+    },
+    {
+      "name": "MongoDB",
+      "logo": "https://cdn.ttgtmedia.com/visuals/LeMagIT/hero_article/MongoDB.jpg"
+    },
+    {
+      "name": "Bootstrap",
+      "logo": "https://api.rootstack.com/sites/default/files/boostrap_logo.png"
+    },
+    {
+      "name": "AngularJs",
+      "logo": "https://cdn-images-1.medium.com/max/1600/0*-aAkkhZcr4STwJK1.jpg"
+    },
+    {
+      "name": "jQuery",
+      "logo": "https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/jquery_logo-sized.jpg"
+    },
+    {
+      "name": "WebRTC",
+      "logo": "https://cdn-images-1.medium.com/max/2000/1*LWzGOyLn9BtQSAOwYMsp2w.jpeg"
+    },
+    {
+      "name": "Socket.io",
+      "logo": "https://miro.medium.com/max/1022/0*xAADmPJN52Yy6XJV.jpg"
+    },
+    {
+      "name": "Git",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png"
+    }
+  ],
   "education": { "name": "Web Development", "school": "University of Belgrade,Institute of nuclear Sciences \"Vinča\", School of computers \"Vinča\" 2009" },
   "portfolio": [{
     "name": "Zazi",

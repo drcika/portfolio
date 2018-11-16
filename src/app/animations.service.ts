@@ -22,23 +22,29 @@ export class AnimationsService {
     }
   }
 
-  animePortfolio() {
-    let projects = Array.from(document.querySelectorAll('.project'));
+  anime(selector) {
+    let selected = Array.from(document.querySelectorAll(`.${selector}`));
+    let keyframes: any;
+    for (let i = 0; i < selected.length; i++) {
+      selected[i].setAttribute("style", "opacity:0;");
+      if (selector === "Skills") {
+        keyframes = [
+          { opacity: "0", transform: 'translateY(15%)', offset: 0 },
+          { opacity: "1", transform: 'translateY(0)', offset: 1 },
+        ];
+      } else {
+        keyframes = [
+          { opacity: "0", transform: 'translateY(-15%)', offset: 0 },
+          { opacity: "1", transform: 'translateY(0)', offset: 1 },
+        ];
+      }
 
-    for (let i = 0; i < projects.length; i++) {
-      projects[i].setAttribute("style", "opacity:0;");
-
-      let projectsKeyframes: any = [
-        { opacity: "0", transform: 'translateY(-15%)', offset: 0},
-        { opacity: "1", transform: 'translateY(0)', offset: 1 },
-      ];
-
-      projects[i].animate(projectsKeyframes, {
+      selected[i].animate(keyframes, {
         duration: 1000,
         easing: 'cubic-bezier(0.19, 1, 0.22, 1)',
         delay: i * 200
       }).onfinish = function () {
-        projects[i].setAttribute("style", "opacity:1;");
+        selected[i].setAttribute("style", "opacity:1;");
       }
     }
   }
