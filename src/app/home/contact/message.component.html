@@ -1,0 +1,20 @@
+<div *ngIf="passedData.name">
+  <mat-dialog-content>
+    <h6>Dear, {{ passedData.name }}</h6>
+    <p>Your email has been successfully sent. <br> We'll be in touch soon.</p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="btn btn-light btn-sm mx-auto" [mat-dialog-close]="true">Close</button>
+  </mat-dialog-actions>
+</div>
+
+<div *ngIf="passedData.error">
+  <mat-dialog-content>
+    <h1 mat-dialog-title>Oops</h1>
+    <p>Something went wrong, try again later</p>
+    <p>{{passedData.error}}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="btn btn-light btn-sm mx-auto" [mat-dialog-close]="true">Close</button>
+  </mat-dialog-actions>
+</div>

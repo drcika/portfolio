@@ -1,16 +1,21 @@
+@import '../../../scss/variable';
+
 div.contact-wrapper {
   margin-top: 5%;
   div.row {
-    border: 1px solid rgba(127, 255, 0, 0.2);
-    box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
+    border: $border;
+    box-shadow: inset $box-shadow;
     div.contact-information {
-      background: rgba(0, 0, 0, 0.5);
+      background: $bg-black-transparent;
+      animation: fadeInLeft 1s $cubic-bezier;
       a {
-        color: white;
+        color: $color;
       }
     }
     div.contact-form {
-      background: rgba(0, 0, 0, 0.2);
+      background: $bg-black-transparent-light;
+      animation: fadeInRight 1s $cubic-bezier;
+
       form {
         padding: 15px;
         font-size: 1.3rem;
@@ -19,17 +24,39 @@ div.contact-wrapper {
             text-align: center;
             padding-right: 15px;
             &.active {
-              color: white;
+              color: $color;
             }
           }
           .inputVal {
             padding-top: 10px;
           }
           label.active{
-            color: white;
+            color: $color;
           }
         }
       }
     }
+  }
+}
+
+@keyframes fadeInLeft {
+  from  {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from  {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

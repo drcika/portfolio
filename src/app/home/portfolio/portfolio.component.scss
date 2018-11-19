@@ -1,3 +1,5 @@
+@import '../../../scss/variable';
+
 div.Portfolio {
   position: relative;
   img {
@@ -10,7 +12,7 @@ div.Portfolio {
     position: absolute;
     top: -15%;
     right: 10%;
-    color: #aee264;
+    color: $color-primary-light;
   }
   .project-hover {
     position: absolute;
@@ -18,7 +20,7 @@ div.Portfolio {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: $bg-black-transparent-dark;
     opacity: 0;
     transition: all 0.3s;
     &:hover {
@@ -50,7 +52,7 @@ div.Portfolio {
       bottom: 15%;
       transform: translateY(50%);
       h4 {
-        color: #aee264;
+        color: $color-primary-light;
       }
     }
     .project-link {

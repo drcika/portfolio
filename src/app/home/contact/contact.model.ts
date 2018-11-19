@@ -1,4 +1,3 @@
-
 export class ContactModel {
   public name: string;
   public email: string;

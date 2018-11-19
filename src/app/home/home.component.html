@@ -6,10 +6,10 @@
       <div class="summary mt-md-5">
         <h3 class="text-center">Summary</h3>
         <p>
-          - A personable, communicative developer, <br> - Takes responsibility for he own personal development,<br> - With a passion for development,<br> - Continually evaluating and upgrading skills so that stays at the cutting edge of web development.<br>
+          - A personable, communicative developer, <br> - Takes responsibility for his own personal development,<br> - With a passion for development,<br> - Continually evaluating and upgrading skills so that stays at the cutting edge of web development.<br>
         </p>
         <h3 class="text-center">Education</h3>
-        <p><strong>Web Development</strong> - University of Belgrade,Institute of nuclear Sciences "Vinča", School of computers "Vinča" 2009</p>
+        <p><strong>Web Development</strong> - University of Belgrade, Institute of nuclear Sciences "Vinča", School of computers "Vinča" 2009</p>
       </div>
     </mat-tab>
 
@@ -21,7 +21,7 @@
           <h3 class="text-center m-4">{{skill.name}}</h3>
         </li>
       </ul>
-      <ul class="rest-skills col-12 mt-5" *ngIf="data" [@skillsAnimations]="anime">
+      <ul class="rest-skills col-12 mt-5 py-md-5" *ngIf="data" [@skillsAnimations]="anime">
         <li class="col-sm-6 col-md-3 col-lg-2 mx-auto mt-3" *ngFor="let skill of data.restSkills">
             <img src="{{skill.logo}}" alt="{{skill.name}}">
         </li>

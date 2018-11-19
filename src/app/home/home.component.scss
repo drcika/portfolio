@@ -1,6 +1,10 @@
+@import '../../scss/variable';
+
 .container {
   height: 95%;
   overflow: auto;
+  background: $bg-black-transparent-light;
+  box-shadow: $box-shadow;
   img.img {
     width: 35vmin;
     float: left;
@@ -10,9 +14,9 @@
     padding-top: 3%;
   }
   ul.main-skills {
-    border: 1px solid rgba(127, 255, 0, 0.2);
-    box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
-    background: rgba(0, 0, 0, 0.5);
+    border: $border;
+    box-shadow: inset $box-shadow;
+    background: $bg-black-transparent;
     li {
       display: inline-block;
       img {
@@ -23,9 +27,10 @@
     }
   }
   ul.rest-skills {
-    border: 1px solid rgba(127, 255, 0, 0.2);
-    box-shadow: inset 0px 0px 20px -4px rgba(127, 255, 0, 0.2);
-    background: rgba(0, 0, 0, 0.5);    li {
+    border: $border;
+    box-shadow: inset $box-shadow;
+    background: $bg-black-transparent;
+    li {
       display: inline-block;
       img {
         display: block;
@@ -38,21 +43,7 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    overflow: hidden;
-  }
    ::ng-deep .mat-tab-header-pagination {
     display: none !important;
-  }
-}
-
-@keyframes blinkingText {
-  0%,
-  100% {
-    opacity: 0
-  }
-  50% {
-    color: red;
-    opacity: 1
   }
 }

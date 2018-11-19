@@ -19,6 +19,7 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.sharedService.addDataToDatabase(this.contactForm.value);
     this.contactForm.reset();
+    this.initForm();
   }
 
   private initForm() {

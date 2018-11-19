@@ -62,12 +62,12 @@ export const contentTrigger = trigger('contentAnimations', [
         style({ opacity: 0, transform: 'translateX(-15%)' }),
         animate('500ms 800ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' })),
       ]),
-      
+
       query('.summary', [
         style({ opacity: 0, transform: 'translateX(15%)' }),
         animate('500ms 800ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' })),
       ]),
-      
+
     ])//group
   ])//transition
 ]);// trigger
@@ -76,11 +76,11 @@ export const skillsTrigger = trigger('skillsAnimations', [
   transition('*=>*', [
 
     query('li', [
-        style({ opacity: 0, transform: 'translateX(-5%)' }),
-        stagger(300, [
-          animate('500ms 1800ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' })),
-        ]),
+      style({ opacity: 0, transform: 'translateX(-5%)' }),
+      stagger(300, [
+        animate('500ms 1800ms ease-in-out', style({ opacity: 1, transform: 'translateX(0)' })),
       ]),
+    ]),
 
   ])//transition
 ]);// trigger

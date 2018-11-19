@@ -10,13 +10,17 @@ import { SharedService } from '../shared.service';
 export class PortfolioComponent implements OnInit {
 
   constructor(private sharedService: SharedService) { }
-   data: dataModel;
+  data: dataModel;
 
   ngOnInit() {
     this.sharedService.getData()
-    .subscribe((data: dataModel): void => {
-      this.data = data;
-    });
+      .subscribe((
+        data: dataModel): void => {
+        this.data = data;
+      },
+        error => {
+          this.sharedService.dialogError(error);
+        });
   }
 
 }

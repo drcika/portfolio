@@ -13,27 +13,27 @@ import { dataModel } from './data.model';
 export class HomeComponent implements OnInit {
 
   constructor(private sharedService: SharedService, private animationsService: AnimationsService) { }
-  
-   data: dataModel;
-   anime = false;
+
+  data: dataModel;
+  anime = false;
 
   ngOnInit() {
     this.sharedService.getData()
-      .subscribe((data: dataModel): void => {
+      .subscribe((
+        data: dataModel): void => {
         this.data = data;
-      });
+      },
+        error => {
+          this.sharedService.dialogError(error);
+        });
   }
+
   tabChanged(event) {
 
     if (event.tab.textLabel === 'Skills') {
       this.anime = true;
-      // this.animationsService.animeSkills();
-      this.animationsService.anime(event.tab.textLabel);
     }
-
-    if (event.tab.textLabel === 'Portfolio') {
-      this.animationsService.anime(event.tab.textLabel);
-    }
+    this.animationsService.anime(event.tab.textLabel);
   }
 
 }

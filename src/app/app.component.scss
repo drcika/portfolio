@@ -1,0 +1,57 @@
+@import '../scss/variable';
+
+.wrapper {
+  height: 100%;
+  .loader-line {
+    opacity: 0;
+    width: 100%;
+    height: 3px;
+    background: $color-primary;
+    margin-top: -1px;
+  }
+  header {
+    height: 15%;
+    background: url(../assets/images/bg-top.png) repeat-x bottom;
+    .container {
+      height: 100%;
+      position: relative;
+      h1 {
+        font-size: 8vmin;
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+      }
+      ul {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        display: flex;
+        li {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  main {
+    background: $bg-green-transparent url(../assets/images/bg-center.jpg);
+    height: 78%;
+    padding-top: 1%;
+    margin-top: -3px;
+  }
+  footer {
+    background: url(../assets/images/bg-bottom.png) repeat-x top;
+    .container {
+      h3 {
+        font-size: 3vmin;
+        padding-top: 1.8%;
+        margin-left: 5%;
+        display: inline-block;
+      }
+      small {
+        font-size: 1.5vmin;
+        color: $color-primary-light;
+        margin-top: 3%;
+      }
+    }
+  }
+}
