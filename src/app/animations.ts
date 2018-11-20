@@ -10,7 +10,7 @@ export const enteringAnimationsTrigger = trigger('enteringAnimations', [
 
       query('main', [
         style({ height: 0, paddingTop: 0 }),
-        animate('1000ms 2800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ height: '78%' }))
+        animate('1000ms 2800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)', style({ height: '80%' }))
       ]),
 
       query('.container', [

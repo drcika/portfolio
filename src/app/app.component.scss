@@ -34,7 +34,7 @@
   }
   main {
     background: $bg-green-transparent url(../assets/images/bg-center.jpg);
-    height: 78%;
+    height: 80%;
     padding-top: 1%;
     margin-top: -3px;
   }
@@ -43,14 +43,14 @@
     .container {
       h3 {
         font-size: 3vmin;
-        padding-top: 1.8%;
+        padding-top: 0.8%;
         margin-left: 5%;
         display: inline-block;
       }
       small {
         font-size: 1.5vmin;
         color: $color-primary-light;
-        margin-top: 3%;
+        margin-top: 2%;
       }
     }
   }
