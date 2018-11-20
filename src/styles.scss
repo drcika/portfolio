@@ -7,6 +7,7 @@ html {
     color: $color;
     background: $bg-primary url(assets/images/bg-body.jpg);
     height: 100%;
+    overflow: hidden !important;
     a {
       color: $color-primary-light;
       &:hover {

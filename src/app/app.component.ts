@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     history.pushState(null, null, '/');
     window.addEventListener('popstate', function (event) {
-      history.pushState(null, null, '/');
+      location.replace('/');
     });
   }
 

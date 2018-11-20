@@ -1,42 +1,49 @@
 @import '../../scss/variable';
-
 .container {
   height: 95%;
   overflow: auto;
   background: $bg-black-transparent-light;
   box-shadow: $box-shadow;
-  img.img {
-    width: 35vmin;
-    float: left;
-    margin: 10% 5% 0 5%;
-  }
-  div.summary {
-    padding-top: 3%;
-  }
-  ul.main-skills {
-    border: $border;
-    box-shadow: inset $box-shadow;
-    background: $bg-black-transparent;
-    li {
-      display: inline-block;
-      img {
-        float: left;
-        width: auto;
-        height: 50px
+  width: 100%;
+  overflow: hidden;
+  .hide-ugly-scrollbar {
+    height: 100%;
+    margin-right: -35px;
+    padding-right: 30px;
+    overflow-y: scroll;
+    img.img {
+      width: 35vmin;
+      float: left;
+      margin: 7% 5% 0 5%;
+    }
+    div.summary {
+      padding-top: 3%;
+    }
+    ul.main-skills {
+      border: $border;
+      box-shadow: inset $box-shadow;
+      background: $bg-black-transparent;
+      li {
+        display: inline-block;
+        img {
+          float: left;
+          width: auto;
+          height: 50px
+        }
       }
     }
-  }
-  ul.rest-skills {
-    border: $border;
-    box-shadow: inset $box-shadow;
-    background: $bg-black-transparent;
-    li {
-      display: inline-block;
-      img {
-        display: block;
-        margin: auto;
-        width: auto;
-        height: 35px
+    ul.rest-skills {
+      border: $border;
+      box-shadow: inset $box-shadow;
+      background: $bg-black-transparent;
+      li {
+        display: inline-block;
+        img {
+          display: block;
+          margin: auto;
+          width: auto;
+          height: 35px
+        }
       }
     }
   }
