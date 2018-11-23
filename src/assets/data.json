@@ -101,7 +101,7 @@
     "info": "Animations playground"
   }, {
     "name": "Fitnes Tracker",
-    "url": "https://ngapc-fitnes-tracker.firebaseapp.com/training",
+    "url": "https://ngapc-fitnes-tracker.firebaseapp.com",
     "github": "https://github.com/drcika/fitnes-tracker--AngularMaterial-Angularfire-NgRx-/tree/master/app",
     "img": "./assets/portfolio/fitnes.png",
     "info": "Fitnes Tracker App"
