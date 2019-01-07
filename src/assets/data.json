@@ -82,6 +82,18 @@
     "img": "./assets/portfolio/zazi.png",
     "info": "Fashion designer ZAZI"
   }, {
+    "name": "Employees Management",
+    "url": "https://frontend-test-project.firebaseapp.com/",
+    "github": "https://github.com/drcika/employees-management-app/tree/master/src/app",
+    "img": "./assets/portfolio/employees.png",
+    "info": "Employees Management App"
+  }, {
+    "name": "Fitnes Tracker",
+    "url": "https://ngapc-fitnes-tracker.firebaseapp.com",
+    "github": "https://github.com/drcika/fitnes-tracker--AngularMaterial-Angularfire-NgRx-/tree/master/app",
+    "img": "./assets/portfolio/fitnes.png",
+    "info": "Fitnes Tracker App"
+  }, {
     "name": "Animated gallery",
     "url": "https://ng-anime-gallery.firebaseapp.com/",
     "github": "https://github.com/drcika/anime-gallery/tree/master/src/app",
@@ -100,11 +112,11 @@
     "img": "./assets/portfolio/spaCars.png",
     "info": "Animations playground"
   }, {
-    "name": "Fitnes Tracker",
-    "url": "https://ngapc-fitnes-tracker.firebaseapp.com",
-    "github": "https://github.com/drcika/fitnes-tracker--AngularMaterial-Angularfire-NgRx-/tree/master/app",
-    "img": "./assets/portfolio/fitnes.png",
-    "info": "Fitnes Tracker App"
+    "name": "Air Traffic App",
+    "url": "https://air-traffic-app-22535.firebaseapp.com",
+    "github": "https://github.com/drcika/air-traffic-app/tree/master/src/app",
+    "img": "./assets/portfolio/airTrafficApp.png",
+    "info": "Simple Air Traffic App"
   }, {
     "name": "Chat App",
     "url": "https://intense-journey-38662.herokuapp.com/",
